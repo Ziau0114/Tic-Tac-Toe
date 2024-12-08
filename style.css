@@ -1,0 +1,121 @@
+*{
+    color: #ffffff;
+    font-family: sans-serif;
+}
+body{
+    /* background-color: #c0ffee; */
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    text-align: center;
+    padding-top: 5vh;
+}
+.turn-container{
+    width: 170px;
+    height: 80px;
+    margin: auto;
+    display: grid;
+    gap: 4px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+h1{
+    color: #91b38e;
+    font-size: 40px;
+    font-weight: 800;
+}
+.turn-container h3{
+    color: #91b38e;
+    font-weight: 700;
+    text-decoration: underline;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.turn-container .turn-box{
+    border: 3px solid #8B4513;
+    border-radius: 20%;
+    font-size: 1.6rem;
+    color: #91b38e;
+    font-weight: 700;
+    
+}
+.turn-box:hover{
+    cursor: pointer;
+}
+.main-game{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 250px;
+    width: 250px;
+    margin: 30px auto;
+    /* border: 2.5px solid #B3C8CF; */
+    border-radius: 4px;
+}
+.box{
+    background-color: #bc540a;
+    border: 2px solid #8B4513;
+    border-radius: 20%;
+    font-size: 2rem;
+    font-weight: 700;
+}
+#winnerMessage {
+    font-size: 24px;
+    font-weight: bold;
+    color: #8B4513;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    top: 20px;
+  }
+.button-15 {
+    background-image: linear-gradient( #8B4513,  #8B4513);
+    border: 1px solid  #8B4513;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    direction: ltr;
+    display: block;
+    font-family: "SF Pro Text","SF Pro Icons","AOS Icons","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: -.022em;
+    line-height: 1.47059;
+    min-width: 30px;
+    overflow: visible;
+    padding: 4px 15px;
+    text-align: center;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+  }
+  
+  .button-15:disabled {
+    cursor: default;
+    opacity: .3;
+  }
+  
+  .button-15:hover {
+    background-image: linear-gradient( #8B4513,  #8B4513);
+    border-color:  #8B4513;
+    text-decoration: none;
+  }
+  
+  .button-15:active {
+    background-image: linear-gradient( #8B4513,  #8B4513);
+    border-color:  #8B4513;
+    outline: none;
+  }
+  
+  .button-15:focus {
+    box-shadow: rgba(131, 192, 253, 0.5) 0 0 0 3px;
+    outline: none;
+  }
